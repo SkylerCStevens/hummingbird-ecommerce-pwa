@@ -68,16 +68,7 @@ function registerValidSW(swUrl, config) {
             caches.open('v1').then(function(cache) {
               return cache.addAll([
                 '/public/',
-                '/public/index.html',
                 '/Components/',
-                '/Components/Nav.jsx',
-                '/Components/Home.jsx',
-                '/Components/Products.jsx',
-                '/Components/AutoSlider.jsx',
-                '/Components/Slide.jsx',
-                '/Components/Contact.jsx',
-                '/Components/Form.jsx',
-                '/Components/Footer.jsx',
                 '/App.css'
               ]);
             })
