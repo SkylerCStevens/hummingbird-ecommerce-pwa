@@ -79,9 +79,8 @@ function registerValidSW(swUrl, config) {
                 '/Components/Form.jsx',
                 '/Components/Footer.jsx',
                 '/App.css',
-                '../public/assets/js/jquery.js',
-                '../public/assets/js/hamburger-nav.min.js'
-        
+                '//https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js',
+                '//https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'
               ]);
             })
             if (navigator.serviceWorker.controller) {
