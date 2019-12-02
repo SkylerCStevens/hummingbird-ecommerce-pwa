@@ -65,6 +65,23 @@ function registerValidSW(swUrl, config) {
         }
         installingWorker.onstatechange = () => {
           if (installingWorker.state === 'installed') {
+            caches.open('v1').then(function(cache) {
+              return cache.addAll([
+                '/public/',
+                '/public/index.html',
+                '/Components/',
+                '/Components/Nav.jsx',
+                '/Components/Home.jsx',
+                '/Components/Products.jsx',
+                '/Components/AutoSlider.jsx',
+                '/Components/Slide.jsx',
+                '/Components/Contact.jsx',
+                '/Components/Form.jsx',
+                '/Components/Footer.jsx',
+                '/App.css'
+        
+              ]);
+            })
             if (navigator.serviceWorker.controller) {
               // At this point, the updated precached content has been fetched,
               // but the previous service worker will still serve the older
@@ -89,24 +106,6 @@ function registerValidSW(swUrl, config) {
                 config.onSuccess(registration);
               }
             }
-              caches.open('v1').then(function(cache) {
-                return cache.addAll([
-                  '/public/',
-                  '/public/index.html',
-                  '/Components/',
-                  '/Components/Nav.jsx',
-                  '/Components/Home.jsx',
-                  '/Components/Products.jsx',
-                  '/Components/AutoSlider.jsx',
-                  '/Components/Slide.jsx',
-                  '/Components/Contact.jsx',
-                  '/Components/Form.jsx',
-                  '/Components/Footer.jsx',
-                  '/App.css',
-                  '/public/assets/js/loadImages.js'
-        
-                ]);
-              })
           }
         };
       };
@@ -143,6 +142,30 @@ function checkValidServiceWorker(swUrl, config) {
       );
     });
 }
+
+// self.addEventListener('fetch', function(event) {
+//   event.respondWith(caches.match(event.request).then(function(response) {
+//     // caches.match() always resolves
+//     // but in case of success response will have value
+//     if (response !== undefined) {
+//       return response;
+//     } else {
+//       return fetch(event.request).then(function (response) {
+//         // response may be used only once
+//         // we need to save clone to put one copy in cache
+//         // and serve second one
+//         let responseClone = response.clone();
+        
+//         caches.open('v1').then(function (cache) {
+//           cache.put(event.request, responseClone);
+//         });
+//         return response;
+//       }).catch(function () {
+//         return caches.match('/public/index.html');
+//       });
+//     }
+//   }));
+// });
 
 export function unregister() {
   if ('serviceWorker' in navigator) {
