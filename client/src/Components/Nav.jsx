@@ -27,7 +27,7 @@ const Nav = () => {
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <img
-          src={require("../images/icons/android-icon-144x144.png")}
+          src={require("../images/nav-logo.png")}
           alt="Hummingbird Logo"
           className="logo nav-logo"
         ></img>
