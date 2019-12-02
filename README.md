@@ -15,7 +15,7 @@ All the pages are made to be responsive from computer screens to small mobile sc
 
 ## See the Site
 
-[Hummingbird Guitars](https://hummingbird-guitars.herokuapp.com/products)
+[Hummingbird Guitars](https://hummingbird-guitar.herokuapp.com)
 
 ## Getting Started
 
@@ -47,6 +47,13 @@ To be able to use the Mongoose connection with MongoDB you will need to save the
 ```bash
 ATLAS_URI='your url here'
 ```
+
+Next to be able to save and compare hashed passwords in the database you will need to add
+```bash
+SALT_WORK_FACTOR = number of salt
+```
+
+Finally you will need to create a JWT_SECRET in the .env file.
 
 ## Contributing
 This is currently a personal project. If you encounter any issues feel free to open an issue for this repo, and I will try to address it. Feel free to clone this repo and modify it for yourself.
