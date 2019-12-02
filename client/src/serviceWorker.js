@@ -78,9 +78,7 @@ function registerValidSW(swUrl, config) {
                 '/Components/Contact.jsx',
                 '/Components/Form.jsx',
                 '/Components/Footer.jsx',
-                '/App.css',
-                '//https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js',
-                '//https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'
+                '/App.css'
               ]);
             })
             if (navigator.serviceWorker.controller) {
