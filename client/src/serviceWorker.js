@@ -78,7 +78,9 @@ function registerValidSW(swUrl, config) {
                 '/Components/Contact.jsx',
                 '/Components/Form.jsx',
                 '/Components/Footer.jsx',
-                '/App.css'
+                '/App.css',
+                '../public/assets/js/jquery.js',
+                '../public/assets/js/hamburger-nav.min.js'
         
               ]);
             })
