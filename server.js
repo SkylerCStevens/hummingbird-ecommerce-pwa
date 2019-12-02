@@ -3,8 +3,8 @@ const path = require("path"); //Import path from node
 const helmet = require("helmet");
 const morgan = require("morgan");
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt')
-const jwt = require('jsonwebtoken')
+const bcrypt = require('bcrypt');
+const compression = require('compression');
 require("dotenv").config();
 
 const app = express(); //Save the object returned from express()
@@ -14,6 +14,8 @@ const uri = process.env.ATLAS_URI
 const contactRoutes = require("./routes/contactRoutes"); //Import the routes for contact endpoints
 const productRoutes = require("./routes/productRoutes"); //Import the routes for product endpoints
 const userRoutes = require("./routes/userRoutes"); //Import the routes for user endpoints
+
+app.use(compression());
 
 //Use helmet's default security settings
 app.use(helmet());
