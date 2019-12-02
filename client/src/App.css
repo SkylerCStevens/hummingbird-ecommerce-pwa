@@ -81,6 +81,8 @@ select {
 
 /* Styling for product images */
 .img {
+  width: 150px;
+  height: 183px;
   margin: 0 30% 10% 30%;
 }
 /* Product title */
