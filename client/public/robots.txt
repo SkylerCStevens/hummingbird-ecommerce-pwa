@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /contactform
+Disallow: /login
+Disallow: /signup
+Disallow:/admin
+Allow: /products
+Allow: /

@@ -300,9 +300,9 @@ footer {
     margin-left: 10%;
   }
   .img {
-    width: 82px;
-    height: 100px;
-    margin: 0 20% 2% 40%;
+    width: 123px;
+    height: 150px;
+    margin: 0 20% 2% 30%;
   }
   .form-div{
     margin-top: 2%;
@@ -366,7 +366,9 @@ footer {
     text-align: center;
   }
   .img {
-    margin-left: 35%;
+    width: 107px;
+    height: 130px;
+    margin-left: 30%;
   }
   .product-box {
     width: 85%;
