@@ -81,8 +81,6 @@ select {
 
 /* Styling for product images */
 .img {
-  width: 150px;
-  height: 180px;
   margin: 0 30% 10% 30%;
 }
 /* Product title */
@@ -300,8 +298,8 @@ footer {
     margin-left: 10%;
   }
   .img {
-    width: 80px;
-    height: 95px;
+    width: 82px;
+    height: 100px;
     margin: 0 20% 2% 40%;
   }
   .form-div{
@@ -366,8 +364,6 @@ footer {
     text-align: center;
   }
   .img {
-    width: 70px;
-    height: 85px;
     margin-left: 35%;
   }
   .product-box {
