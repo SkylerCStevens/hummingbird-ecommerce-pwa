@@ -10,12 +10,21 @@ Hummingbird Guitars E-commerce project is a work to show the workings of ReactJS
 
 -A Node Express server to handle communication with the database and define the endpoints to send data to the react page.
 
+-A login that uses JWT for authentication
+
+-The app is also a progressive web app. This means that the user can add the web page to their home screen like a native app.
+
+-The app still has some functionality even if there is no internet connection.
+
 
 All the pages are made to be responsive from computer screens to small mobile screens. This is made possible with both bootstrap and media queries.
 
 ## See the Site
 
 [Hummingbird Guitars](https://hummingbird-guitar.herokuapp.com)
+
+!(home)[Work/screenshots/home-screenshot.png]
+!(products)[Work/screenshots/products-screenshot.png]
 
 ## Getting Started
 
