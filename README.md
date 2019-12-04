@@ -23,8 +23,13 @@ All the pages are made to be responsive from computer screens to small mobile sc
 
 [Hummingbird Guitars](https://hummingbird-guitar.herokuapp.com)
 
+### Mobile Screen
 ![on phone](./Work/screenshots/hb-mobile-icon.png)
+
+### Home Page
 ![home](./Work/screenshots/homepage-screenshot.png)
+
+### Products Page
 ![products](./Work/screenshots/product-screenshot.png)
 
 ## Getting Started
