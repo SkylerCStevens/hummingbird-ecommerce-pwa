@@ -84,7 +84,7 @@ class ProductsPage extends Component {
           <div className="row col-lg-8">
         <form className="form-inline top-page col-md-8 col-lg-11 filter-form">
               <div className="form-group">
-              <label htmlFor="guitar-type" className="visuallyhidden"></label>
+              <label htmlFor="guitar-type" className="visuallyhidden">Type</label>
                <select
                   name="type"
                   className="ml-3 form-control product-select"
@@ -99,7 +99,7 @@ class ProductsPage extends Component {
                   <option value="acoustic">Acoustic Guitar</option>
                 </select>
 
-                <label htmlFor="guitar-price" className="visuallyhidden"></label>
+                <label htmlFor="guitar-price" className="visuallyhidden">Prices</label>
                 <select
                   name="prices"
                   className="ml-3 form-control product-select"
@@ -118,7 +118,7 @@ class ProductsPage extends Component {
                   <option value="5001">More than $5000</option>
                 </select>
 
-                <label htmlFor="guitar-brand" className="visuallyhidden"></label>
+                <label htmlFor="guitar-brand" className="visuallyhidden">Brand</label>
                 <select
                   name="brand"
                   className="ml-3 form-control product-select"
