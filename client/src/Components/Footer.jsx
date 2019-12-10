@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
       {/* Copyright and lastUpdated text displayed in the corners of the page */}
       <span className="copyright">Copyright 2019</span>
-      <span className="lastUpdated">Last Updated Sep. 27th 2019</span>
+      <span className="lastUpdated">Last Updated Dec. 2019</span>
     </footer>
   );
 };
