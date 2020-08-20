@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "babel": "^6.23.0",
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^5.0.0",
     "bootstrap": "^4.3.1",
     "compression": "^1.7.4",
     "concurrently": "^4.1.2",
